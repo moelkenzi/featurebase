@@ -21,7 +21,7 @@ const Footer = () => {
               </Link>
               <p className="my-5 flex max-w-sm items-center text-base leading-6 text-gray-500 dark:text-gray-200">
                 The next-gen support & feedback platform for modern teams.
-                Built-in the
+                Built-in the 🇸🇴.
               </p>
               {/* <iframe src="/" className="mt-3 -ml-1.5 opacity-[63%]">
                 <Link href="/">
@@ -89,6 +89,7 @@ const Footer = () => {
                           className="transform text-base leading-6 text-gray-400 duration-300 dark:text-gray-200 dark:hover:text-indigo-200"
                         >
                           {link.name}
+                          {link.icon && <link.icon />}
                         </Link>
                       </li>
                     ))}

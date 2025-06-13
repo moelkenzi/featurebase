@@ -1,4 +1,10 @@
-import { Discord, Email, Linkedin, X } from "@/components/icons";
+import { Discord, Email, Linkedin, SmallLogo, X } from "@/components/icons";
+
+interface FooterLinks {
+  name: string;
+  href: string;
+  icon?: typeof SmallLogo;
+}
 
 export const Navlinks = [
   {
@@ -34,7 +40,7 @@ export const FooterTitles = [
   },
 ];
 
-export const FooterLinks = [
+export const FooterLinks: FooterLinks[] = [
   {
     name: "Support platform",
     href: "/#support-platform",
@@ -46,6 +52,7 @@ export const FooterLinks = [
   {
     name: "Help Center",
     href: "/#help-center",
+    icon: SmallLogo,
   },
   {
     name: "Changelog",
