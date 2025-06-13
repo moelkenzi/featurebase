@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
+import Footer from "@/components/layouts/Footer";
+import Header from "@/components/layouts/Header";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -29,7 +32,22 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} dark antialiased`}
         suppressHydrationWarning
       >
-        {children}
+        <Header />
+        <main className="bg-gay-950 relative flex min-h-screen flex-col overflow-hidden">
+          {/* TODO: bg-gray-950 */}
+          {/* <div className="relative">
+            <Image
+              src="/image.png"
+              alt="Upper section background"
+              width={1920}
+              height={1080}
+              className="absolute inset-0 -z-50 h-[600px] w-full object-cover opacity-25 will-change-auto"
+            />
+            <div className="absolute inset-0 -z-40 h-[600px] w-full bg-gradient-to-t from-gray-950 to-transparent backdrop-blur"></div>
+          </div> */}
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

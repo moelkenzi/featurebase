@@ -1,16 +1,23 @@
-import { Button } from "@/components/ui/button";
+import Image from "next/image";
+
+import Hero from "@/components/sections/Hero";
 
 export default function Home() {
   return (
-    <div className="grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 p-8 pb-20 font-[family-name:var(--font-geist-sans)] sm:p-20">
-      <main className="row-start-2 flex flex-col items-center gap-[32px] sm:items-start">
-        <div className="flex flex-col items-center justify-center gap-4">
-          <h1 className="text-2xl">a NextJs Starter Project 📦</h1>
-          <Button variant={"default"} className="cursor-pointer">
-            Get Started 🚀
-          </Button>
+    <main>
+      <div className="relative">
+        <div className="absolute inset-0 -z-50 h-[1596px] w-full">
+          <Image
+            src="/image.png"
+            alt="Upper section background"
+            fill
+            priority
+            className="object-cover opacity-25"
+          />
         </div>
-      </main>
-    </div>
+        <div className="absolute inset-0 -z-40 h-full w-full bg-gradient-to-t from-gray-950 to-transparent backdrop-blur-3xl"></div>
+      </div>
+      <Hero />
+    </main>
   );
 }

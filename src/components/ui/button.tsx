@@ -16,11 +16,19 @@ const buttonVariants = cva(
           "bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
         outline:
           "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
+        primary:
+          "main-btn ml-4 flex-shrink-0 flex-nowrap font-semibold text-white",
         secondary:
           "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
+        navlink:
+          "group inline-flex w-max items-center cursor-default focus:outline-none focus:ring-0 bg-transparent hover:bg-transparent justify-center py-3 text-sm font-medium transition-colors text-gray-500 hover:text-gray-300 disabled:pointer-events-none disabled:opacity-50 data-[active]:text-gray-200 dark:text-gray-50 dark:hover:text-gray-100 dark:data-[active]:text-gray-100 group",
+        def: "secondary-btn border border-transparent bg-transparent text-gray-500 shadow-none hover:bg-gray-100/60 dark:text-gray-100 dark:hover:border-gray-600/30 dark:hover:bg-gray-700/30",
+        icon: "inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-750 hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 dark:bg-gray-750/40",
+        smIcon:
+          "inline-flex items-center justify-center text-gray-200 border rounded-full main-transition h-9 w-9 border-gray-100/60 bg-gray-50 hover:bg-gray-100/60 dark:border-gray-750/60 dark:bg-gray-800 dark:hover:bg-gray-700",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
